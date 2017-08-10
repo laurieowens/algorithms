@@ -141,7 +141,4 @@ function main() {
     var b2 = parseInt(b0_temp[2]);
     var result = solve(a0, a1, a2, b0, b1, b2);
     console.log(result.join(" "));
-    
-
-
 }
