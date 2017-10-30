@@ -1,0 +1,15 @@
+//es 5
+function palindrome(str) {
+  var reducedString = str.replace(/[^0-9a-z]/gi,"").toLowerCase();
+  var reversedString = reducedString.split("").reverse().join('');
+  return reducedString == reversedString;
+}
+
+palindrome("eye");
+
+//es6 version
+let isPalindrome = (str) => {
+  let reducedString = str.replace(/[^0-9a-z]/gi,"").toLowerCase();
+  let reversedString = reducedString.split("").reverse().join('');
+  return reducedString == reversedString;
+};
